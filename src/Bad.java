@@ -15,12 +15,13 @@ public class Bad extends Entity{
         getImg();
     }
     public void setDefault(){
+        Random rand = new Random();
         hp = 100;
         atk = 10;
         speed = 4;
         solidArea = new Rectangle(8,18,32,32);
         locked = 0;
-        
+        dir = rand.nextInt(4);
     }
     public void getImg(){
         try{
